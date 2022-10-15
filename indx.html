@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUDS</title>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="head">
+        <h2>cruds</h2>
+        <p>PRODUCT MANAGEMENT sYSTEM </p>
+    </div>
+   
+   
+    <div class="inputs">
+        <input type="text" id="title" placeholder="Title">
+        <div class="price">
+            <input onkeyup="gettotal()" type="number" placeholder="Price" id="price">
+            <input onkeyup="gettotal()" type="number" placeholder="Taxes" id="taxes">
+            <input onkeyup="gettotal()" type="number" placeholder="Ads" id="ads">
+            <input onkeyup="gettotal()" type="number" placeholder="Discount" id="discount">
+            <small id="total"> </small>
+        </div>
+        <input type="number" id="count" placeholder="Count">
+        <input type="text" id="category" placeholder="Category">
+                <button id="submit">create</button>
+
+    </div>
+
+
+
+    <div class="outputs">
+        <input onkeyup="searchdata(this.value)" type="text" placeholder="Search" id="search">
+        <div class="searchbtn">
+            <button onclick="getsearchmood(this.id)" id="search by total">search by total</button>
+            <button onclick="getsearchmood(this.id)" id="search by category">search by category</button>
+
+        </div>
+    </div>
+
+
+
+    <button id="deleteall"></button>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ads</th>
+            <th>DISCOUNT</th>
+            <th id="to">total</th>
+            <th>CATEGORY</th>
+            <th>update</th>
+            <th>DELETE</th>
+        </tr>
+
+
+    <tbody id="tbody">
+        
+
+      
+   
+    </tbody>
+    
+    </table>
+
+    <button id="mo">↑</button>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+<!-- CRUDS
+PRODUCT MANAGEMENT SYSTEM -->
